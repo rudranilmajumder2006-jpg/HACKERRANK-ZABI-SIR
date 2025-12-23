@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    int yr;
+    scanf("%d",&yr);
+    
+    
+  if(yr>0){ 
+                if(yr % 400 == 0){
+                    printf("Yes, %d is a leap year.",yr);
+                }
+                else if(yr % 4 == 0 && yr % 100 != 0){
+                    printf("Yes, %d is a leap year.",yr);
+                }
+                else{
+                    printf("No, %d is not a leap year.",yr);
+                }
+      
+          }  
+    
+    if(yr<=0){
+                  printf("The given year %d is Invalid year.",yr);
+    }
+    
+    return 0;
+}
